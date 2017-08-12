@@ -1,0 +1,16 @@
+# How it works:
+# See http://blog.scottlowe.org/2014/10/22/multi-machine-vagrant-with-yaml/ for details.
+#
+- name: centos7test
+  box:  pbarriscale/centos7-gui
+  mem:  2048
+  cpus: 2
+  # guest_port: 8000
+  # host_port: 8000
+  # ip:   192.168.44.10
+
+# - name: fedtest
+#   box: bertvv/fedora23
+#   mem:  1024
+#   cpus: 1
+

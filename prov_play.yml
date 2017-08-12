@@ -1,0 +1,11 @@
+---
+- name: Initial playbook
+  hosts: all
+  become: true
+
+  tasks:
+  - name: Add your  SSH authorized key
+    authorized_key:
+      user: vagrant
+      key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+

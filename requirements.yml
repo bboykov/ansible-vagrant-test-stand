@@ -1,0 +1,19 @@
+# Usage:
+#   cd /<repo_root>/
+#   ansible-galaxy install -r  ansible/requirements.yml
+# Examples: http://stackoverflow.com/questions/25230376/how-to-automatically-install-ansible-galaxy-roles
+# More examples:
+# # Role on galaxy
+# - you.rolename
+# # Public role on github
+# - name: role-public
+#   src: https://github.com/erasme/role-public.git
+# # Private role on github
+# - name: role-private
+#   src: git+ssh://git@github.com/you/role-private.git
+#
+# Roles
+- name: update
+  src:  https://github.com/bboykov/ansible-role-update.git
+  path: ./roles
+
